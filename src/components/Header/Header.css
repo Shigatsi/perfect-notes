@@ -3,4 +3,5 @@
     background-color: green;
     height: 56px;
     width: 100%;
+    display: grid;
 }
