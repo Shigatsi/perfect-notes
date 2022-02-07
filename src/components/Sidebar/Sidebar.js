@@ -2,9 +2,13 @@
 
 import "./Sidebar.css";
 
+import NotesList from "../NotesList/NotesList";
+
 function Sidebar () {
     return(
-        <div className="sidebar">SIDEBAR</div>
+        <div className="sidebar">
+            <NotesList />
+        </div>
     )
 }
 
