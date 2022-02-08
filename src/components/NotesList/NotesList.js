@@ -1,11 +1,16 @@
 ﻿import React from "react";
+import { NavLink } from "react-router-dom";
 
 import "./NotesList.css";
-
+import { notesArr } from "./mockup";
 function NotesList () {
     return (
         <div className="notes-list">
-            NOTES LIST
+            {
+                notesArr.map( (item, i) => (
+                    <NavLink key="i" to="#">{item}</NavLink>
+                ))
+            }
         </div>
     )
 }

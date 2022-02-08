@@ -4,9 +4,9 @@ import './App.css';
 
 import Header from '../Header/Header.js'
 import Footer from '../Footer/Footer.js';
-import Sidebar from '../Sidebar/Sidebar';
-import Content from "../Content/Content";
 import Promo from '../Promo/Promo';
+import Content from '../Content/Content'
+import Sidebar from '../Sidebar/Sidebar';
 
 function App() {
     return (
@@ -21,8 +21,11 @@ function App() {
                     <Route
                         path="my-notes"
                         element = {
-                            <Sidebar />,
-                            <Content />
+                            <>
+                                <Content/>
+                                <Sidebar/>
+                            </>
+
                         }
                     >
                     </Route>

@@ -1,3 +1,4 @@
 .note {
+    grid-area: cnt;
     background-color: coral;
 }
