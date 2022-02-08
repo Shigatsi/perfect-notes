@@ -2,14 +2,16 @@
 
 import './Header.css'
 import Toolbar from "../Toolbar/Toolbar"
+import { NavLink } from "react-router-dom";
 
 function Header () {
     return (
         <header className="header">
             <h1 className="header__title">Perfect notes</h1>
             <Toolbar />
-            <button className="header-exit__btn">Выйти</button>
-
+            <NavLink to = "/">
+                <button className="header-exit__btn">Выйти</button>
+            </NavLink>
         </header>
     )
 
