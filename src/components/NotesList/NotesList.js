@@ -8,7 +8,7 @@ function NotesList () {
         <div className="notes-list">
             {
                 notesArr.map( (item, i) => (
-                    <NavLink key="i" to="#">{item}</NavLink>
+                    <NavLink key={i} to="#">{item}</NavLink>
                 ))
             }
         </div>

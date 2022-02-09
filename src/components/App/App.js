@@ -7,6 +7,7 @@ import Footer from '../Footer/Footer.js';
 import Promo from '../Promo/Promo';
 import Content from '../Content/Content'
 import Sidebar from '../Sidebar/Sidebar';
+import Profile from '../Profile/Profile';
 
 function App() {
     return (
@@ -19,7 +20,7 @@ function App() {
                         element={<Promo />}>
                     </Route>
                     <Route
-                        path="my-notes"
+                        path="my-notes/*"
                         element = {
                             <>
                                 <Content/>
@@ -30,6 +31,7 @@ function App() {
                     >
                     </Route>
                 </Routes>
+                <Profile />
                 <Footer />
             </div>
         </div>

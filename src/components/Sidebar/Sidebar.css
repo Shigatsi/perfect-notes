@@ -1,4 +1,7 @@
 ﻿.sidebar{
     grid-area:sb ;
-    background-color: greenyellow
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
 }
