@@ -4,23 +4,29 @@
     width: 100%;
     display: grid;
     grid-template-columns: 180px 1fr 100px;
-
 }
 
 .header__title {
     font-size: 16px;
-    font-weight:700;
+    font-weight: 700;
     align-self: center;
 }
 
-
 .header-exit__btn {
-    background-color: #175676;
+    background-color: #ebebeb;
+    color: #131200;
     padding: 5px 15px;
     font-size: 14px;
     line-height: 1;
     width: 100px;
-    border: none;
+    border: 1px solid #175676;
     border-radius: 5px;
+}
 
+.header-exit__btn:hover {
+    background-color: #175676;
+    color: #ebebeb;
+    opacity: 0.9;
+    transition: 0.2s ease-in;
+    cursor: pointer;
 }

@@ -10,6 +10,12 @@ import Sidebar from '../Sidebar/Sidebar';
 import Profile from '../Profile/Profile';
 
 function App() {
+
+    const [ profileIsOpen, setProfileIsOpen ] = React.useState(false);
+    function toggleProfile () {
+        setProfileIsOpen(!profileIsOpen)
+    }
+
     return (
         <div className="page">
             <div className='app-wrapper'>
@@ -24,14 +30,14 @@ function App() {
                         element = {
                             <>
                                 <Content/>
-                                <Sidebar/>
+                                <Sidebar openProfile = {toggleProfile}/>
                             </>
 
                         }
                     >
                     </Route>
                 </Routes>
-                <Profile />
+                <Profile isOpen={profileIsOpen} onClose={toggleProfile}/>
                 <Footer />
             </div>
         </div>

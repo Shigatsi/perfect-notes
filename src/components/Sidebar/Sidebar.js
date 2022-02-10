@@ -7,11 +7,11 @@ import { NavLink } from "react-router-dom";
 
 
 
-function Sidebar () {
+function Sidebar ({openProfile}) {
     const login = 'judgy2pizza'
     return(
         <div className="sidebar">
-            <button className="sidebar__link sidebar__link-type-profile" to = "profile">
+            <button className="sidebar__link sidebar__link-type-profile" onClick={openProfile}>
                 {login}
             </button>
             <NotesList />
